@@ -14,7 +14,7 @@ wine = load_wine()
 # 转换成 DataFrame
 df_wine = pd.DataFrame(wine.data, columns=wine.feature_names)
 
-# ✅ 增加一列：葡萄酒类别（就是你图片里的 class label）
+# 增加一列：葡萄酒类别（就是你图片里的 class label）
 df_wine['class'] = wine.target
 
 # 查看数据信息
